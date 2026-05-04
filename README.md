@@ -1,4 +1,4 @@
-# 🛡️ Aryabhatt | Cybersecurity Learner & Full Stack Developer
+# 🛡️ Nilesh Vishwakarma | Cybersecurity Learner & Full Stack Developer
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=arybhatt4533&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F7FF&text_color=9ca3af&icon_color=00F7FF" alt="GitHub Stats" />
@@ -36,10 +36,10 @@
 
 <div align="center">
   <p>“Code. Contribute. Collaborate.”</p>
-  <a href="mailto:bhattarya4533@gmail.com">
+  <a href="mailto:vishwakarmanilesh7398@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://github.com/arybhatt4533">
+  <a href="https://github.com/vishwakarmanilesh7398-driod">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </div>
