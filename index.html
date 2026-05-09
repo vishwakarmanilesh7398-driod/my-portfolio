@@ -69,19 +69,29 @@
             color: #00f7ff;
         }
 
-        @media (max-width: 768px) {
-            body {
-                background-position: 30% center;
-            }
+       @media (max-width: 768px) {
+    /* 1. फोटो वाले कंटेनर को कंट्रोल करना */
+    .flex-col > div:first-child {
+        margin-bottom: 80px !important; /* गैप को बढ़ाकर 80px कर दिया */
+        display: flex !important;
+        justify-content: center !important;
+    }
 
-            .flex-col > :first-child {
-                margin-bottom: 50px !important;
-            }
+    /* 2. तुम्हारा कर्सिव नाम */
+    .hero-name {
+        font-size: 3.2rem !important;
+        display: block !important;
+        margin-top: 10px !important;
+        line-height: 1.2 !important;
+    }
 
-            .hero-name {
-                font-size: 3rem !important;
-            }
-        }
+    /* 3. 'Hi, I'm Neel' वाले पूरे सेक्शन को नीचे खिसकाना */
+    .flex-col > div:last-child {
+        margin-top: 30px !important;
+        padding-top: 10px !important;
+        text-align: center !important;
+    }
+}
 
         </style>
 </head>
