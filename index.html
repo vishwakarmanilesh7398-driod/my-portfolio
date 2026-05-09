@@ -129,31 +129,27 @@
         width: 150px !important;
         margin: 0 auto !important;
     }
-}
 
-    /* 2. तुम्हारा कर्सिव नाम */
-    .hero-name {
-        font-size: 3.2rem !important;
+    /* Force Fix - Ensure my-pic.jpeg displays on mobile */
+    [style*="my-pic.jpeg"], .profile-img, img[src*="my-pic"] {
         display: block !important;
-        margin-top: 10px !important;
-        line-height: 1.2 !important;
-    }
-
-    /* 3. 'Hi, I'm Neel' वाले पूरे सेक्शन को नीचे खिसकाना */
-    .flex-col > div:last-child {
-        margin-top: 30px !important;
-        padding-top: 10px !important;
-        text-align: center !important;
-    }
-
-    /* 4. Profile image visibility on mobile */
-    .relative.w-44.h-56 img,
-    img[src*="my-pic"] {
-        display: block !important;
+        content: url('my-pic.jpeg') !important;
+        width: 180px !important;
+        height: 220px !important;
+        border-radius: 20px !important;
+        object-fit: cover !important;
+        margin: 0 auto 20px auto !important;
+        border: 2px solid #00d2ff !important;
+        box-shadow: 0 0 20px rgba(0, 210, 255, 0.5) !important;
         visibility: visible !important;
         opacity: 1 !important;
-        width: 150px !important;
-        margin: 0 auto !important;
+    }
+
+    /* Ensure parent containers don't hide the image */
+    .relative.group,
+    .relative.group > div {
+        display: block !important;
+        visibility: visible !important;
     }
 }
 
