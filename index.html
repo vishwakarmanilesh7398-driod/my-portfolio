@@ -72,10 +72,64 @@
        @media (max-width: 768px) {
     /* 1. फोटो वाले कंटेनर को कंट्रोल करना */
     .flex-col > div:first-child {
-        margin-bottom: 80px !important; /* गैप को बढ़ाकर 80px कर दिया */
+        margin-bottom: 80px !important; /* गैप को बढ़ाकर 80px कर दिया */
         display: flex !important;
         justify-content: center !important;
     }
+
+    /* Image container - ensure it's sized properly on mobile */
+    .relative.group {
+        width: 100% !important;
+        max-width: 200px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Main image div with background-image */
+    .relative.group > div[style*="background-image"] {
+        width: 180px !important;
+        height: 220px !important;
+        position: relative !important;
+        z-index: 50 !important;
+        object-fit: cover !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    /* Badge/label overlapping fix - lower z-index */
+    .relative.group > div[class*="absolute"][class*="-bottom"] {
+        z-index: 40 !important;
+    }
+
+    /* Gradient blur backdrop - ensure it doesn't cover image */
+    .relative.group > div[class*="bg-gradient"] {
+        z-index: 30 !important;
+    }
+
+    /* 2. तुम्हारा कर्सिव नाम */
+    .hero-name {
+        font-size: 3.2rem !important;
+        display: block !important;
+        margin-top: 10px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* 3. 'Hi, I'm Neel' वाले पूरे सेक्शन को नीचे खिसकाना */
+    .flex-col > div:last-child {
+        margin-top: 30px !important;
+        padding-top: 10px !important;
+        text-align: center !important;
+    }
+
+    /* 4. Profile image visibility on mobile */
+    .relative.w-44.h-56 img,
+    img[src*="my-pic"] {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 150px !important;
+        margin: 0 auto !important;
+    }
+}
 
     /* 2. तुम्हारा कर्सिव नाम */
     .hero-name {
